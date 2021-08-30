@@ -24,12 +24,12 @@ def login():
     global driver = webdriver.chrome.webdriver.WebDriver(executable_path='E:\驻场信息\LB重复清理-selebium\chromedriver_win32\chromedriver.exe')
 
     #加载运营端页面
-    url = "http://console.tce.cloud.yonghui.cn"
+    url = ""
     driver.get(url)
     
     #用户名和密码发送登录框中
-    driver.find_element_by_xpath("//*[@class='login-form']/ul/li[1]/div/div/input").send_keys("yangtf@yonghui.cn")
-    driver.find_element_by_xpath("//*[@class='login-form']/ul/li[2]/div/div/input").send_keys("1q2w3e4r!")
+    driver.find_element_by_xpath("//*[@class='login-form']/ul/li[1]/div/div/input").send_keys("")
+    driver.find_element_by_xpath("//*[@class='login-form']/ul/li[2]/div/div/input").send_keys("")
     
     #点击登录按钮进行登录
     driver.find_element_by_xpath("//*[@id = 'loginBox']/div/div/div[1]/div[3]/input").click()
